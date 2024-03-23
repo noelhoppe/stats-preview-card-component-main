@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-slate-900 flex min-h-screen justify-center items-center">
+  <main class="bg-blue-950 grid grid-cols-1 max-w-screen-md gap-8 rounded-lg m-8 md:grid-cols-2">
+    <div class="flex flex-col gap-4 p-8 order-2 md:order-1">
+      <h1 class="font-extrabold text-white text-4xl text-center md:text-left">
+        Get <span class="text-purple-500">insights</span> that help your business grow.
+      </h1>
+      <p class="text-slate-100 text-center md:text-left">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <ul class="w-full flex flex-col my-auto md:flex-row md:justify-between text-center">
+        <li class="flex flex-col text-white">
+          <strong class="font-bold">10k+</strong>
+          <span class="uppercase text-slate-100">companies</span>
+        </li>
+        <li class="flex flex-col text-white">
+          <strong class="font-bold">314</strong>
+          <span class="uppercase text-slate-100">templates</span>
+        </li>
+        <li class="flex flex-col text-white">
+          <strong class="font-bold">12m+</strong>
+          <span class="uppercase text-slate-100">queries</span>
+        </li >
+      </ul>
+    </div>
+    <picture class="order-1 md:order-2 bg-purple-500">
+      <source media="(min-width: 768px)" srcset="images/image-header-desktop.jpg">
+      <source media="(min-width: 0)" srcset="images/image-header-mobile.jpg">
+      <img class="mix-blend-multiply bject-cover rounded-br-none rounded-t-lg w-full h-auto md:h-full md:w-auto md:rounded-r-lg md:rounded-tl-none" src="images/image-header-mobile.jpg" alt="">
+    </picture>
+  </main>
+</body>
+</html>
